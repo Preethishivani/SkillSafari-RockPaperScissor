@@ -45,12 +45,6 @@ btnAgain.addEventListener('click',function(){
   main.classList.remove('hidden');
   selAnother.style.display="none";
 })
-// function again(){
-//   main.classList.remove('hidden');
-//   another.classList.add('hidden');
-//   score=0;
-//   userScore.textContent=score;
-// }
 
 //paper
 symbol.addEventListener('click',function(){
