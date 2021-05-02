@@ -5,24 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Skill Safari | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header style="display: flex;">
+<body class="hide">
+  <header>
     <div class="header">
-      <h1 class="head">ROCK</h1>
-      <h1 class="head">PAPER</h1>
-      <h1 class="head">SCISSOR</h1>
-    </div>
-    <div class="scor">
-      <p class="para">SCORE</p>
-      <span class="score">0</span>
+      <div class="heading">
+        <img src="./logo.svg" alt="logo">
+      </div>
+      <div class="scores">
+        <h4>SCORE</h4>
+        <p class="score">0</p>
+      </div>
     </div>
   </header>
-  <main>
-    <button class="symbol paper"><img src="./icon-paper.svg" alt="paper symbol"></button>
-    <button class="symbol scissor"><img src="./icon-scissors.svg" alt="scissor symbol"></button>
-    <button class="symbol rock"><img src="./icon-rock.svg" alt="rock symbol"></button>
+  <main class="main">
+    <button class="symbol paper" data-choice="paper"><span class="im"><img src="./icon-paper.svg" alt="paper symbol"></span></button>
+    <button class="symbol-1 scissor" data-choice="scissor"><span class="im"><img src="./icon-scissor.svg" alt="scissor symbol"></span></button>
+    <button class="symbol-2 rock" data-choice="rock"><span class="im"><img src="./icon-rock.svg" alt="rock symbol"></span></button>
+    <img class="img" src="./bg-triangle.svg">
   </main>
-  <button class="rules">RULES</button>
+
+  <div class="another">
+    <div class="one" style="width: 180px;">
+      <h4>YOU PICKED</h4>
+      <button class="sel paper" id="user_select"><span class="im"><img src="./icon-paper.svg" alt="paper symbol"></span></button>
+    </div>
+    <div class="two">
+      <h1 class="result">YOU WIN </h1>
+      <button class="btn-again">PLAY AGAIN</button>
+    </div>
+    <div class="three" style="width: 200px;">
+      <h4>THE HOUSE PICKED</h4>
+      <button class="mouse paper" id="computer_select"><span class="im"><img src="./icon-paper.svg" alt="rock symbol"></span></button>
+    </div>
+  </div>
+
+  <button class="btn-rules">RULES</button> 
+  <div class="show hidden">
+    <button class="btn-close">&times;</button>
+    <h2>RULES</h2>
+    <img src="./image-rules.svg" alt="rules-img">
+  </div>
+  <div class="overlay hidden"></div> 
+
+  <script src="./script.js"></script>
 </body>
+
 </html>
